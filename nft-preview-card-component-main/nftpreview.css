@@ -1,0 +1,96 @@
+.container{
+    /* outline: 1px solid black; */
+    width: 90em;
+    height: 40em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10em auto;
+    background-color: #0d1a2d;
+}
+
+.container__contenido{
+    /* outline: 1px solid black; */
+    width: 18em;
+    height: 32em;
+    box-sizing: border-box;
+    background-color: #15273f;
+    border-radius: 15px;
+    box-shadow: 0px 15px 5px 10px #0c1729;
+}
+
+.container__contenido-img{
+    /* outline: 1px solid black; */
+    width: 85%;
+    height: 50%;
+    margin: auto;
+    margin-top: 1.35em;
+    border-radius: 15px;
+
+}
+
+.container__contenido-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.container__contenido h3{
+    margin-left: 1em;
+    color: #fff;
+}
+
+.container__contenido-texto{
+    margin-left: 1em;
+    color: #788eab;
+}
+
+.container__detalles{
+    width: 90%;
+    height: 5%;
+    /* outline: 1px solid black; */
+    display: flex;
+    margin-left: 1em;
+    align-items: center;
+}
+
+.container__detalles-porcentaje{
+    margin-left: 10px;
+    color: #0afcfa;
+}
+
+.container__detalles-reloj{
+margin-left: 70px;
+}
+.container__detalles-tiempo{
+    color: #788eab;
+    margin-left: 10px;
+}
+
+.container__linea{
+    width: 90%;
+    height: 1px;
+    margin: .8em 1em;
+    background-color: #788eab;
+}
+
+.container__avatar{
+    width: 25%;
+    margin-left: 1em;
+    height: 10%;
+    object-fit: contain;
+    margin-left: 0;
+}
+
+.container__creador{
+   display: inline-block;
+   position: absolute;
+   color: #788eab;
+}
+
+.container__creador::after{
+    content: "Darinson Perea";
+    margin-left: 5px;
+    color: #fff;
+}

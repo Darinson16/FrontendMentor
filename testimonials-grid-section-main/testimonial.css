@@ -1,0 +1,234 @@
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+.container{
+    /* outline: 1px solid black; */
+    max-width: 1400px;
+    height: 40em;
+    background-color: #edf2f8;
+    margin: 7.5em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+h3{
+    font-size: 21px;
+    position: relative;
+    z-index: 95;
+}
+
+.grid-container{
+    /* outline: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* height: 31.5em; */
+    max-width: 1100px;
+    grid-gap: 20px;
+    /* margin: 10em auto; */
+}
+
+.grid-container-daniel{
+    /* outline: 1px solid black; */
+    grid-column: 1 / 3 ;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #733fc8;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    right: 85px;
+}
+
+.grid-container-walters, .grid-container-harmon{
+    /* outline: 1px solid black; */
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.grid-container-harmon .texto{
+    margin-top: 30px;
+}
+
+.grid-container-harmon h3{
+    padding-left: 30px;
+    position: relative;
+    right: 30px;
+    
+}
+
+.grid-container-walters{
+    background-color: #49556b;
+}
+
+.grid-container-kira{
+    /* outline: 1px solid black; */
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.grid-container-kira, .grid-container-harmon{
+    background-color: #ffffff;
+    box-shadow: 5px 5px 30px 1px rgb(211, 211, 211);
+}
+/* .grid-container-harmon{
+    outline: 1px solid black;
+    padding: 20px;
+} */
+.grid-container-patrick{
+    /* outline: 1px solid black; */
+    grid-column:  2 / 4;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #18202d;
+}
+
+
+.grid-container-patrick, .grid-container-walters, .grid-container-daniel{
+    color: #ffffff;
+}
+
+img{
+    border-radius: 50%;
+    /* object-fit: contain; */
+    width: 30px;
+    outline: 1px solid rgb(102, 51, 153);
+}
+
+
+/* img + p, p + p {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img + p{
+    position: relative;
+    bottom: 20px;
+}
+ */
+p + p {
+    font-size: 12px;
+}
+
+/* .info-kira{
+    position: absolute; 
+    width: auto;
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    left: 60px;
+} */
+
+.info-daniels, .info-walters, .info-harmon , .info-kira, .info-patrick{
+    position: absolute; 
+    width: auto;
+    /* outline: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    left: 60px;
+}
+
+/* .info-walters, .info-harmon{
+    position: absolute; 
+    width: auto;
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    left: 60px;
+}
+
+.info-patrick{
+    position: absolute; 
+    width: auto;
+    outline: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    left: 60px;
+} */
+
+.info-kira p, .info-daniels p, .info-walters p, .info-harmon p, .info-patrick p  {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.graduado2, .texto2{
+    color: rgb(128, 128, 128);
+    opacity: .8;
+}
+
+.graduado, .texto{
+    color: rgb(211, 211, 211);
+    opacity: .6;
+}
+
+@media screen and (max-width: 1131px) {
+    .container{
+    height: auto;
+    max-width: 400px;
+    min-width: 280px;
+    margin: 2em auto;
+    padding: 15px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    box-sizing: border-box;
+    flex-grow: 1;
+    border-radius: 10px;
+    }
+    
+    .grid-container{
+        /* outline: 1px solid black; */
+        display: flex;
+        width: 375px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .grid-container-daniel, .grid-container-harmon, .grid-container-kira, .grid-container-patrick, .grid-container-walters{
+        max-width: auto;
+        max-height: auto;
+        padding: 30px;
+    }
+    
+    .info-daniels, .info-walters, .info-harmon , .info-kira, .info-patrick{
+        top: 30px;
+        left: 70px;
+    }
+
+    .grid-container-kira{
+        order: 5;
+    }
+    svg{
+        right: 20px;
+    }
+}
+
